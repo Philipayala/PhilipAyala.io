@@ -9,7 +9,7 @@ $(document).ready(function(){
     arrows: false,
     infinite: true,           
     autoplay: true,
-    autoplayspeed: 2000
+    autoplayspeed: 1500
     
    });
   })
