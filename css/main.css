@@ -1,0 +1,198 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Arapey', serif;
+font-family: 'Cormorant Garamond', serif;
+*/
+
+body {
+	background: #ffffff;
+	text-align: center;
+	height: 100%;
+
+	margin: 8px;
+	padding: 2px;
+	transition: all cubic-bezier(0.77, 0, 0.175, 1) 1s;
+	overflow: auto;
+}
+
+/*-----slider----- */
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialised;
+}
+
+
+.center-slider {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	top: 10.5vh;
+	margin: 5px auto;
+	transition: all cubic-bezier(0.77, 0, 0.175, 1) 1s;
+}
+
+
+.slick-slide .images {
+	margin: 0px 0px;
+
+	height: 75vh;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+	.slick-slide .images {
+		height: 65vh;
+		padding-top:  10px;
+	}
+}
+
+@media only screen and (min-device-height: 300px) and (-webkit-min-device-pixel-ratio: 2) {
+	.slick-slide .images {
+		height: 65vh;
+		padding-top:  10px;
+	}
+}
+
+
+.center-slider img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: scale-down;
+	margin: 0 auto;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+}
+
+.slick-slide {
+	transition: all ease-in-out 0s;
+	opacity: 0.2;
+}
+
+.slick-active {
+	opacity: 0.5;
+}
+
+.slick-current {
+	opacity: 1;
+}
+
+/*------site title---------*/
+.site-title {
+	position: absolute;
+	left: 50%;
+	top: 4.5%;
+	width: 100%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 9999;
+	overflow: hidden;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+	.site-title .center-slider {
+		width: 80%;
+	}
+}
+.site-title h1 {
+	margin: 0;
+	padding: 2px;
+}
+
+.site-title a {
+	font-family: "Cormorant Garamond", times, serif;
+	font-size: 30px/33px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	color: black;
+	text-decoration: none;
+	transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+	.site-title a {
+		font: 24px/30px "Cormorant Garamond", Times, serif;
+	}
+}
+
+/*------site footer---------*/
+
+.site-footer {
+	position: absolute;
+	left: 50%;
+	bottom: 3.5%;
+	width: fit-content;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 9999;
+	overflow: auto;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+	.site-footer {
+		width: 80%;
+	}
+}
+
+.site-footer p {
+	width: 100%;
+	margin: 0;
+	padding: 2px;
+	
+}
+/* Dropdown Button */
+.contactbtn {
+	font-family: "Cormorant Garamond", times, serif;
+	font-size: 23px;
+	font-weight: 400;
+	color: black;
+	text-decoration: none;
+	transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+	.contactbtn {
+		font: 20px/24px "Cormorant Garamond", Times, serif;
+	}
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	opacity: 0;
+	position: relative;
+	background-color: #ffffff;
+	min-width: 160px;
+	z-index: 1;
+	transition: all cubic-bezier(0.65, 0.05, 0.36, 1) 0.2s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	font-family: "Cormorant Garamond", times, serif;
+	color: black;
+	margin: 0px;
+	padding: 0px 10px;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.6s ease-out 0.2s; /* desvanece sombra hover con transicion*/
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f0f0f0;
+	transition: all cubic-bezier(0.65, 0.05, 0.36, 1) 0.2s;
+}
+
+/* Show the dropdown menu on hover */
+
+.site-footer:hover .dropdown-content {
+	opacity: 1;
+	display: inline-block;
+	transition: all cubic-bezier(0.65, 0.05, 0.36, 1) 0.2s;
+}
+
